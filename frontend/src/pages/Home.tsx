@@ -1,15 +1,16 @@
 /* eslint-disable react-native/no-inline-styles */
 
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, ScrollView} from 'react-native';
 import {TouchableOpacity, Dimensions} from 'react-native';
+import {Image} from 'react-native';
 
 const Home = ({navigation}: any) => {
   const innerPadding = 15;
 
   const cardNumberInline = 3;
   const cardWidthRatio = 7.5; // card ratio
-  const cardVerticalRatio = 0.66; // card ratio
+  const cardVerticalRatio = 0.85; // card ratio
 
   const screenWidth = Dimensions.get('window').width;
   7;
@@ -26,9 +27,14 @@ const Home = ({navigation}: any) => {
 
   console.log('widht' + screenWidth);
   return (
-    <View style={{backgroundColor: '#F2F5FA', minHeight: '100%'}}>
-      <View style={{height: 250}}></View>
-      <View style={{height: 100, padding: innerPadding}}>
+    <ScrollView style={{backgroundColor: '#F2F5FA', minHeight: '100%'}}>
+      <View style={{height: 200}}>
+        <Image
+          source={require('../assets/testBanner.jpg')}
+          style={{width: '100%', height: '100%'}}
+        />
+      </View>
+      <View style={{height: 120, padding: innerPadding}}>
         <View
           style={{
             height: '100%',
@@ -57,7 +63,7 @@ const Home = ({navigation}: any) => {
       </View>
       <View style={{padding: innerPadding}}>
         <View style={{height: 35}}>
-          <Text style={{fontWeight: 600, color: '#0B24CB', fontSize: 14}}>
+          <Text style={{fontWeight: 600, color: '#0B24CB', fontSize: 18}}>
             Contents
           </Text>
         </View>
@@ -75,11 +81,11 @@ const Home = ({navigation}: any) => {
               justifyContent: 'center',
               alignItems: 'center', // 수평 중앙 정렬 추가
               backgroundColor: '#fff',
-              borderRadius: 2,
+              borderRadius: 4,
               borderBottomColor: '#16A6F3',
               borderBottomWidth: 2,
             }}>
-            <Text>Work</Text>
+            <Text style={{fontSize: 16, fontWeight: 500}}>Work</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={{
@@ -88,12 +94,12 @@ const Home = ({navigation}: any) => {
               justifyContent: 'center',
               alignItems: 'center', // 수평 중앙 정렬 추가
               backgroundColor: '#fff',
-              borderRadius: 2,
+              borderRadius: 4,
               borderBottomColor: '#16A6F3',
               borderBottomWidth: 2,
             }}
             onPress={() => navigation.navigate('language-best')}>
-            <Text>Language</Text>
+            <Text style={{fontSize: 16, fontWeight: 500}}>Language</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={{
@@ -102,11 +108,11 @@ const Home = ({navigation}: any) => {
               justifyContent: 'center',
               alignItems: 'center', // 수평 중앙 정렬 추가
               backgroundColor: '#fff',
-              borderRadius: 2,
+              borderRadius: 4,
               borderBottomColor: '#16A6F3',
               borderBottomWidth: 2,
             }}>
-            <Text>K-Pop</Text>
+            <Text style={{fontSize: 16, fontWeight: 500}}>K-Pop</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={{
@@ -115,11 +121,11 @@ const Home = ({navigation}: any) => {
               justifyContent: 'center',
               alignItems: 'center', // 수평 중앙 정렬 추가
               backgroundColor: '#fff',
-              borderRadius: 2,
+              borderRadius: 4,
               borderBottomColor: '#16A6F3',
               borderBottomWidth: 2,
             }}>
-            <Text>Drama</Text>
+            <Text style={{fontSize: 16, fontWeight: 500}}>Drama</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={{
@@ -128,15 +134,171 @@ const Home = ({navigation}: any) => {
               justifyContent: 'center',
               alignItems: 'center', // 수평 중앙 정렬 추가
               backgroundColor: '#fff',
-              borderRadius: 2,
+              borderRadius: 4,
               borderBottomColor: '#16A6F3',
               borderBottomWidth: 2,
             }}>
-            <Text>Food</Text>
+            <Text style={{fontSize: 16, fontWeight: 500}}>Food</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={{
+              height: cradHeight,
+              width: cradWidth,
+              justifyContent: 'center',
+              alignItems: 'center', // 수평 중앙 정렬 추가
+              backgroundColor: '#fff',
+              borderRadius: 4,
+              borderBottomColor: '#16A6F3',
+              borderBottomWidth: 2,
+            }}>
+            <Text style={{fontSize: 16, fontWeight: 500}}>Food</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={{
+              height: cradHeight,
+              width: cradWidth,
+              justifyContent: 'center',
+              alignItems: 'center', // 수평 중앙 정렬 추가
+              backgroundColor: '#fff',
+              borderRadius: 4,
+              borderBottomColor: '#16A6F3',
+              borderBottomWidth: 2,
+            }}>
+            <Text style={{fontSize: 16, fontWeight: 500}}>Food</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={{
+              height: cradHeight,
+              width: cradWidth,
+              justifyContent: 'center',
+              alignItems: 'center', // 수평 중앙 정렬 추가
+              backgroundColor: '#fff',
+              borderRadius: 4,
+              borderBottomColor: '#16A6F3',
+              borderBottomWidth: 2,
+            }}>
+            <Text style={{fontSize: 16, fontWeight: 500}}>Food</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={{
+              height: cradHeight,
+              width: cradWidth,
+              justifyContent: 'center',
+              alignItems: 'center', // 수평 중앙 정렬 추가
+              backgroundColor: '#fff',
+              borderRadius: 4,
+              borderBottomColor: '#16A6F3',
+              borderBottomWidth: 2,
+            }}>
+            <Text style={{fontSize: 16, fontWeight: 500}}>Food</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={{
+              height: cradHeight,
+              width: cradWidth,
+              justifyContent: 'center',
+              alignItems: 'center', // 수평 중앙 정렬 추가
+              backgroundColor: '#fff',
+              borderRadius: 4,
+              borderBottomColor: '#16A6F3',
+              borderBottomWidth: 2,
+            }}>
+            <Text style={{fontSize: 16, fontWeight: 500}}>Food</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={{
+              height: cradHeight,
+              width: cradWidth,
+              justifyContent: 'center',
+              alignItems: 'center', // 수평 중앙 정렬 추가
+              backgroundColor: '#fff',
+              borderRadius: 4,
+              borderBottomColor: '#16A6F3',
+              borderBottomWidth: 2,
+            }}>
+            <Text style={{fontSize: 16, fontWeight: 500}}>Food</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={{
+              height: cradHeight,
+              width: cradWidth,
+              justifyContent: 'center',
+              alignItems: 'center', // 수평 중앙 정렬 추가
+              backgroundColor: '#fff',
+              borderRadius: 4,
+              borderBottomColor: '#16A6F3',
+              borderBottomWidth: 2,
+            }}>
+            <Text style={{fontSize: 16, fontWeight: 500}}>Food</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={{
+              height: cradHeight,
+              width: cradWidth,
+              justifyContent: 'center',
+              alignItems: 'center', // 수평 중앙 정렬 추가
+              backgroundColor: '#fff',
+              borderRadius: 4,
+              borderBottomColor: '#16A6F3',
+              borderBottomWidth: 2,
+            }}>
+            <Text style={{fontSize: 16, fontWeight: 500}}>Food</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={{
+              height: cradHeight,
+              width: cradWidth,
+              justifyContent: 'center',
+              alignItems: 'center', // 수평 중앙 정렬 추가
+              backgroundColor: '#fff',
+              borderRadius: 4,
+              borderBottomColor: '#16A6F3',
+              borderBottomWidth: 2,
+            }}>
+            <Text style={{fontSize: 16, fontWeight: 500}}>Food</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={{
+              height: cradHeight,
+              width: cradWidth,
+              justifyContent: 'center',
+              alignItems: 'center', // 수평 중앙 정렬 추가
+              backgroundColor: '#fff',
+              borderRadius: 4,
+              borderBottomColor: '#16A6F3',
+              borderBottomWidth: 2,
+            }}>
+            <Text style={{fontSize: 16, fontWeight: 500}}>Food</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={{
+              height: cradHeight,
+              width: cradWidth,
+              justifyContent: 'center',
+              alignItems: 'center', // 수평 중앙 정렬 추가
+              backgroundColor: '#fff',
+              borderRadius: 4,
+              borderBottomColor: '#16A6F3',
+              borderBottomWidth: 2,
+            }}>
+            <Text style={{fontSize: 16, fontWeight: 500}}>Food</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={{
+              height: cradHeight,
+              width: cradWidth,
+              justifyContent: 'center',
+              alignItems: 'center', // 수평 중앙 정렬 추가
+              backgroundColor: '#fff',
+              borderRadius: 4,
+              borderBottomColor: '#16A6F3',
+              borderBottomWidth: 2,
+            }}>
+            <Text style={{fontSize: 16, fontWeight: 500}}>Food</Text>
           </TouchableOpacity>
         </View>
       </View>
-    </View>
+    </ScrollView>
   );
 };
 
